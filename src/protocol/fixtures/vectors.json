@@ -1,0 +1,740 @@
+[
+  {
+    "name": "base_auth",
+    "func": "create_base_auth_command",
+    "args": [
+      0,
+      0
+    ],
+    "bytes": [
+      90,
+      1,
+      6,
+      0,
+      0,
+      4,
+      1,
+      2
+    ]
+  },
+  {
+    "name": "split_dose",
+    "func": "split_dose_volume_ml",
+    "args": [
+      0.2
+    ],
+    "high": 0,
+    "low": 2
+  },
+  {
+    "name": "split_dose",
+    "func": "split_dose_volume_ml",
+    "args": [
+      25.64
+    ],
+    "high": 1,
+    "low": 0
+  },
+  {
+    "name": "split_dose",
+    "func": "split_dose_volume_ml",
+    "args": [
+      25.65
+    ],
+    "high": 1,
+    "low": 0
+  },
+  {
+    "name": "split_dose",
+    "func": "split_dose_volume_ml",
+    "args": [
+      51.2
+    ],
+    "high": 2,
+    "low": 0
+  },
+  {
+    "name": "split_dose",
+    "func": "split_dose_volume_ml",
+    "args": [
+      999.9
+    ],
+    "high": 39,
+    "low": 15
+  },
+  {
+    "name": "dose_auth_1",
+    "func": "create_dose_auth_1_command",
+    "args": [
+      0,
+      0
+    ],
+    "bytes": [
+      165,
+      1,
+      6,
+      0,
+      0,
+      4,
+      4,
+      7
+    ]
+  },
+  {
+    "name": "dose_auth_2",
+    "func": "create_dose_auth_2_command",
+    "args": [
+      0,
+      1
+    ],
+    "bytes": [
+      165,
+      1,
+      6,
+      0,
+      1,
+      4,
+      5,
+      7
+    ]
+  },
+  {
+    "name": "manual_dose",
+    "func": "create_manual_dose_command",
+    "args": [
+      0,
+      0,
+      0,
+      25.65
+    ],
+    "bytes": [
+      165,
+      1,
+      10,
+      0,
+      0,
+      27,
+      0,
+      0,
+      0,
+      1,
+      0,
+      17
+    ]
+  },
+  {
+    "name": "manual_dose_999",
+    "func": "create_manual_dose_command",
+    "args": [
+      0,
+      1,
+      7,
+      999.9
+    ],
+    "bytes": [
+      165,
+      1,
+      10,
+      0,
+      1,
+      27,
+      7,
+      0,
+      0,
+      39,
+      15,
+      62
+    ]
+  },
+  {
+    "name": "set_time",
+    "func": "create_set_time_command",
+    "args": [
+      0,
+      0,
+      "2024-12-31T14:30"
+    ],
+    "bytes": [
+      90,
+      1,
+      11,
+      0,
+      0,
+      9,
+      24,
+      12,
+      2,
+      14,
+      30,
+      0,
+      5
+    ]
+  },
+  {
+    "name": "set_time_now",
+    "func": "create_set_time_command",
+    "args": [
+      0,
+      0,
+      "2026-09-09T00:02:12"
+    ],
+    "bytes": [
+      90,
+      1,
+      11,
+      0,
+      0,
+      9,
+      26,
+      9,
+      3,
+      0,
+      2,
+      12,
+      29
+    ]
+  },
+  {
+    "name": "brightness",
+    "func": "create_set_brightness_command",
+    "args": [
+      0,
+      0,
+      1,
+      255
+    ],
+    "bytes": [
+      90,
+      1,
+      7,
+      0,
+      0,
+      7,
+      1,
+      255,
+      255
+    ]
+  },
+  {
+    "name": "brightness_0",
+    "func": "create_set_brightness_command",
+    "args": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "bytes": [
+      90,
+      1,
+      7,
+      0,
+      0,
+      7,
+      0,
+      0,
+      1
+    ]
+  },
+  {
+    "name": "query_status",
+    "func": "create_query_status_command",
+    "args": [
+      0,
+      0
+    ],
+    "bytes": [
+      90,
+      1,
+      6,
+      0,
+      0,
+      4,
+      1,
+      2
+    ]
+  },
+  {
+    "name": "add_auto_setting_3ch",
+    "func": "create_add_auto_setting_command",
+    "args": [
+      0,
+      0,
+      "06:30",
+      "18:30",
+      [
+        100,
+        80,
+        60
+      ],
+      15,
+      31
+    ],
+    "bytes": [
+      165,
+      1,
+      19,
+      0,
+      0,
+      25,
+      6,
+      30,
+      18,
+      30,
+      15,
+      31,
+      100,
+      80,
+      60,
+      255,
+      255,
+      255,
+      255,
+      255,
+      248
+    ]
+  },
+  {
+    "name": "add_auto_setting_8ch",
+    "func": "create_add_auto_setting_command",
+    "args": [
+      0,
+      1,
+      "00:00",
+      "23:59",
+      [
+        100,
+        80,
+        60,
+        50,
+        40,
+        30,
+        20,
+        10
+      ],
+      30,
+      255
+    ],
+    "bytes": [
+      165,
+      1,
+      19,
+      0,
+      1,
+      25,
+      0,
+      0,
+      23,
+      59,
+      30,
+      255,
+      100,
+      80,
+      60,
+      50,
+      40,
+      30,
+      20,
+      10,
+      213
+    ]
+  },
+  {
+    "name": "delete_auto_setting",
+    "func": "create_delete_auto_setting_command",
+    "args": [
+      0,
+      0,
+      "06:30",
+      "18:30",
+      15,
+      31,
+      3
+    ],
+    "bytes": [
+      165,
+      1,
+      19,
+      0,
+      0,
+      25,
+      6,
+      30,
+      18,
+      30,
+      15,
+      31,
+      255,
+      255,
+      255,
+      255,
+      255,
+      255,
+      255,
+      255,
+      15
+    ]
+  },
+  {
+    "name": "reset_auto_settings",
+    "func": "create_reset_auto_settings_command",
+    "args": [
+      0,
+      0
+    ],
+    "bytes": [
+      90,
+      1,
+      8,
+      0,
+      0,
+      5,
+      5,
+      255,
+      255,
+      9
+    ]
+  },
+  {
+    "name": "auto_point",
+    "func": "create_auto_point_command",
+    "args": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      false
+    ],
+    "bytes": [
+      90,
+      1,
+      8,
+      0,
+      0,
+      6,
+      0,
+      0,
+      0,
+      15
+    ]
+  },
+  {
+    "name": "auto_point_sea",
+    "func": "create_auto_point_command",
+    "args": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      true
+    ],
+    "bytes": [
+      90,
+      1,
+      9,
+      0,
+      0,
+      6,
+      0,
+      0,
+      0,
+      0,
+      14
+    ]
+  },
+  {
+    "name": "auto_point_max",
+    "func": "create_auto_point_command",
+    "args": [
+      0,
+      1,
+      3,
+      1439,
+      80,
+      false
+    ],
+    "bytes": [
+      90,
+      1,
+      8,
+      0,
+      1,
+      6,
+      3,
+      48,
+      80,
+      109
+    ]
+  },
+  {
+    "name": "switch_auto_mode",
+    "func": "create_switch_to_auto_mode_command",
+    "args": [
+      0,
+      0
+    ],
+    "bytes": [
+      90,
+      1,
+      8,
+      0,
+      0,
+      5,
+      18,
+      255,
+      255,
+      30
+    ]
+  },
+  {
+    "name": "switch_manual_mode",
+    "func": "create_switch_to_manual_mode_command",
+    "args": [
+      0,
+      1
+    ],
+    "bytes": [
+      90,
+      1,
+      8,
+      0,
+      1,
+      5,
+      11,
+      255,
+      255,
+      6
+    ]
+  },
+  {
+    "name": "set_fan_speed",
+    "func": "create_set_fan_speed_command",
+    "args": [
+      0,
+      0,
+      50
+    ],
+    "bytes": [
+      90,
+      1,
+      6,
+      0,
+      0,
+      15,
+      50,
+      58
+    ]
+  },
+  {
+    "name": "set_fan_speed_100",
+    "func": "create_set_fan_speed_command",
+    "args": [
+      0,
+      1,
+      100
+    ],
+    "bytes": [
+      90,
+      1,
+      6,
+      0,
+      1,
+      15,
+      100,
+      109
+    ]
+  },
+  {
+    "name": "fan_auto_mode",
+    "func": "create_fan_auto_mode_command",
+    "args": [
+      0,
+      0
+    ],
+    "bytes": [
+      90,
+      1,
+      8,
+      0,
+      0,
+      5,
+      17,
+      255,
+      255,
+      29
+    ]
+  },
+  {
+    "name": "vivid3_fan_temp",
+    "func": "create_vivid3_fan_start_stop_temp_command",
+    "args": [
+      0,
+      0,
+      25,
+      33
+    ],
+    "bytes": [
+      165,
+      1,
+      7,
+      0,
+      0,
+      45,
+      25,
+      33,
+      19
+    ]
+  },
+  {
+    "name": "vivid3_fan_temp_2",
+    "func": "create_vivid3_fan_start_stop_temp_command",
+    "args": [
+      0,
+      1,
+      20,
+      40
+    ],
+    "bytes": [
+      165,
+      1,
+      7,
+      0,
+      1,
+      45,
+      20,
+      40,
+      22
+    ]
+  },
+  {
+    "name": "vivid3_temp_protect",
+    "func": "create_vivid3_temp_protect_command",
+    "args": [
+      0,
+      0,
+      true
+    ],
+    "bytes": [
+      90,
+      1,
+      8,
+      0,
+      0,
+      5,
+      49,
+      255,
+      255,
+      61
+    ]
+  },
+  {
+    "name": "vivid3_temp_protect_off",
+    "func": "create_vivid3_temp_protect_command",
+    "args": [
+      0,
+      1,
+      false
+    ],
+    "bytes": [
+      90,
+      1,
+      8,
+      0,
+      1,
+      5,
+      48,
+      255,
+      255,
+      61
+    ]
+  },
+  {
+    "name": "vivid3_bt_led",
+    "func": "create_vivid3_bluetooth_led_command",
+    "args": [
+      0,
+      0,
+      true
+    ],
+    "bytes": [
+      90,
+      1,
+      8,
+      0,
+      0,
+      5,
+      50,
+      255,
+      255,
+      62
+    ]
+  },
+  {
+    "name": "vivid3_bt_led_off",
+    "func": "create_vivid3_bluetooth_led_command",
+    "args": [
+      0,
+      1,
+      false
+    ],
+    "bytes": [
+      90,
+      1,
+      8,
+      0,
+      1,
+      5,
+      49,
+      255,
+      255,
+      60
+    ]
+  },
+  {
+    "name": "encode_timestamp",
+    "func": "encode_timestamp",
+    "args": [
+      "2024-12-31T14:30:00"
+    ],
+    "bytes": [
+      24,
+      12,
+      2,
+      14,
+      30,
+      0
+    ]
+  },
+  {
+    "name": "encode_timestamp",
+    "func": "encode_timestamp",
+    "args": [
+      "2000-01-01T00:00:00"
+    ],
+    "bytes": [
+      0,
+      1,
+      6,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "name": "encode_timestamp",
+    "func": "encode_timestamp",
+    "args": [
+      "2030-06-15T23:59:00"
+    ],
+    "bytes": [
+      30,
+      6,
+      6,
+      23,
+      59,
+      0
+    ]
+  }
+]
